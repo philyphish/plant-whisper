@@ -5,8 +5,9 @@ ruby '2.7.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+
+gem 'pg'
+
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -31,6 +32,21 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'better_errors'
+  gem 'capybara-webkit'
+  gem 'factory_girl_rails'
+  gem 'ffaker'
+  gem 'database_cleaner'
+  gem 'letter_opener'
+  gem 'rspec-rails'
+  gem 'pry'
+  gem 'pry-nav'
+  gem 'pry-rails'
+  gem 'simple_bdd'
+  gem 'shoulda-matchers'
+  gem 'spring'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do
